@@ -226,5 +226,10 @@ homepage towns as a mosaic on an oat band, with the New on FYStay shelf moved
 below it so carousels aren't stacked; search card highlights; the stay page's
 booking panel now sticks beside the content from lg (it used to be at the very
 foot of a 5,000px page).
-Still to review against this standard: /help, /safety, /cancellation-policies,
-/services, /travel-extras, /contact.
+/services, /safety, /cancellation-policies and /contact (16 Nov): the icon-card
+grids and icon rows became a left-hand title with a ruled list on the right
+(`RuledPage` / `RuledRows`, src/components/RuledPage.tsx); wording unchanged,
+since the safety and cancellation text is legal-sensitive. /help (a FAQ
+accordion) and /travel-extras (a product page with a price card) were reviewed
+and left as they are. Every page in the site has now been reviewed against
+this standard.

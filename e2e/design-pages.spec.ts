@@ -1,10 +1,10 @@
 import { test, expect } from "@playwright/test";
 import AxeBuilder from "@axe-core/playwright";
 
-// The redesigned /host and /about pages: no serious accessibility problems
+// The redesigned /host, /about, /services, /safety, /cancellation-policies and /contact pages: no serious accessibility problems
 // (the dark "What you keep" band and the photo-backed close are the risky
 // parts for contrast), and the page structure a host or visitor relies on.
-for (const path of ["/host", "/about"]) {
+for (const path of ["/host", "/about", "/services", "/safety", "/cancellation-policies", "/contact"]) {
   test(`${path} has no serious accessibility violations`, async ({ page }) => {
     await page.goto(path);
     const results = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa"]).analyze();
